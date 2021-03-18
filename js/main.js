@@ -10,7 +10,7 @@ $(document).ready(function () {
             };
         },
         gameOver: function () {
-            if (game.income.current > 10) {
+            if (game.income.current > 1000) {
                 window.alert("winner");
                 document.location.reload();
             };
