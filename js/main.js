@@ -36,10 +36,8 @@ $(document).ready(function () {
             },
             animation: function () {
                 $(".addMineralToScore").addClass("addMineralToScoreAnim");
-                //                $(".mineralsInfo").addClass("mineralsInfoAnim");
                 setTimeout(function () {
                     $(".addMineralToScore").removeClass("addMineralToScoreAnim");
-                    //                    $(".mineralsInfo").removeClass("mineralsInfoAnim");
                 }, 200);
             },
         },
@@ -70,10 +68,8 @@ $(document).ready(function () {
             },
             animation: function () {
                 $(".addPollutionToScore").addClass("addPollutionToScoreAnim");
-                //                $(".lessPollutionInfo").addClass("lessPollutionInfoAnim");
                 setTimeout(function () {
                     $(".addPollutionToScore").removeClass("addPollutionToScoreAnim");
-                    //                    $(".lessPollutionInfo").removeClass("lessPollutionInfoAnim");
                 }, 200);
             },
         },
@@ -309,8 +305,7 @@ $(document).ready(function () {
     setInterval(game.upgrades.automation.factory.prodTime, 1000);
     setInterval(game.upgrades.automation.greenPower.prodTime, 1000);
 
-    //    game.winLost();
-    //User action
+       //User action
     $(".addIncome").on("click", function () {
         game.income.add();
         game.income.animation();
@@ -339,7 +334,6 @@ $(document).ready(function () {
             game.upgrades.automation.factory.production();
             game.upgrades.automation.factory.animation();
             game.upgrades.automation.factory.display();
-            console.log(game.upgrades.automation.factory.incomePerUpgrade)
         };
     });
     $(".greenEnergyValueUpgrade").on("click", function () {
